@@ -1,0 +1,17 @@
+<ul>
+    <li *ngFor="let item of childAds; let i = index">
+        <span>
+            <strong>{{i+1}}</strong>
+            <span class="title">{{ item.title}}</span>
+            <span class="description">{{ item.description}}</span>
+            <p-button label="Delete" (click)="deleteAd(i)"></p-button>
+        </span>
+    </li>
+</ul>
+
+<form [formGroup]="superForm">
+    <input pInputText type="text" formControlName="title" placeholder="Введите название объявления"/>
+    <input pInputText type="text" formControlName="description" placeholder="Введите описание объявления"/>
+    
+    <p-button label="Add item" (click)="addAd()" [disabled]="superForm.invalid"></p-button>
+</form>
