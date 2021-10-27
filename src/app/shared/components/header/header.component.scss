@@ -1,3 +1,15 @@
-.page-header{
-    background-color: orange;
+.search {
+    position: relative;
+    height: 38px;
+    .search-input {
+        width: 420px !important;
+        border: 2px solid #cfcfcf;
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+    .search-icon {
+        position: absolute;
+        top: 50%;
+        margin-top: -8px;
+    }
 }

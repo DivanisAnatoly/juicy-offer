@@ -1,9 +1,11 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
+
 export interface Ad {
   title: string;
   description: string;
+  image?: File;
 }
 
 @Component({
@@ -25,7 +27,8 @@ export class AddsListComponent implements OnInit {
   ngOnInit(): void {
     this.superForm = new FormGroup({
       title: new FormControl('',[Validators.required]),
-      description: new FormControl('',[Validators.required])
+      description: new FormControl('',[Validators.required]),
+      image: new FormControl('')
     });
   }
 
@@ -36,7 +39,8 @@ export class AddsListComponent implements OnInit {
   addAd() {
     const ad: Ad = {
       title: this.superForm.controls.title.value,
-      description: this.superForm.controls.description.value
+      description: this.superForm.controls.description.value,
+      image: this.superForm.controls.image.value
     };
 
     this.onAddClicked.emit(ad);

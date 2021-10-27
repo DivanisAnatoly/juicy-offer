@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './../../app-routing.module';
 //angular
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -34,6 +35,7 @@ import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.comp
     InputTextModule,
     ReactiveFormsModule,
     InputMaskModule,
+    AppRoutingModule,
   ],
   exports:[
     LoginFormComponent,

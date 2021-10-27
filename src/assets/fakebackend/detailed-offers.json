@@ -1,0 +1,34 @@
+{
+    "detailedOffersList": [
+        {
+            "id": 1,
+            "title": "OOO gasprom",
+            "description": "...",
+            "price": null,
+            "regionID": 1,
+            "region": "Moscow",
+            "categoryID": 1,
+            "category": "resorses",
+            "ownerID": "98b651ae-c9aa-4731-9996-57352d525f7e",
+            "ownerName": "admin",
+            "announcementImagesUri": []
+        },
+        {
+            "id": 2,
+            "title": "New Title",
+            "description": "New description",
+            "price": 300,
+            "regionID": 1,
+            "region": "Moscow",
+            "categoryID": 1,
+            "category": "resorses",
+            "ownerID": "98b651ae-c9aa-4731-9996-57352d525f7e",
+            "ownerName": "admin",
+            "announcementImagesUri": [
+                "https://mega.nz/file/xsYl3SqY#1VGj-EFEabtsBXrHbYiTKNh0aJBKHxKAzrRtc9GfAv0",
+                "https://mega.nz/file/c4JHzYjI#kHFH8dVwy3X4vG97NsI5UvNnC11T-eFPvgQtMmnLuII",
+                "https://mega.nz/file/4sIWlBJK#iUO-FJmRcjSqOk0Nf442pw0EaLyg_z_ijd93QJOrjBQ"
+            ]
+        }
+    ]
+}

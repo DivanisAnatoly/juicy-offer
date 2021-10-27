@@ -5,8 +5,14 @@
 </pre>
 <a routerLink="">Главная</a><br>
 <a routerLink="/add-offer">Добавить объявление</a><br>
-<a routerLink="/offers/edit-offer">Редактировать объявление</a><br>
+<a routerLink="/my-offers/edit-offer">Редактировать объявление</a><br>
 <a routerLink="/admin">Админка</a><br>
 <a routerLink="/login">Логин</a><br>
 <a routerLink="/sign-up">Регистрация</a><br>
 <a routerLink="/my-offers">Мои объявления</a><br>
+
+<ul>
+    <li *ngFor="let offer of offerItems">
+        <app-offers-item [offersItem]="offer"></app-offers-item>
+    </li>
+</ul>

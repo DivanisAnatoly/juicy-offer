@@ -11,6 +11,7 @@ import { MyOffersComponent } from './pages/my-offers/my-offers.component';
 import { AddOfferComponent } from './pages/add-offer/add-offer.component';
 import { EditOfferComponent } from './pages/edit-offer/edit-offer.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { OfferDescriptionComponent } from './pages/offer-description/offer-description.component';
 
 //URL Matching
 const routes: Routes = [
@@ -19,9 +20,10 @@ const routes: Routes = [
   {path: 'sign-up', component: SignUpComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'offers', component: OffersComponent},
+  {path: 'my-offers/edit-offer', component: EditOfferComponent},
+  {path: 'offers/:id', component: OfferDescriptionComponent},
   {path: 'my-offers', component: MyOffersComponent},
   {path: 'add-offer', component: AddOfferComponent},
-  {path: 'my-offers/edit-offer', component: EditOfferComponent},
   {path: '**', component: NotFoundComponent},
 ];
 

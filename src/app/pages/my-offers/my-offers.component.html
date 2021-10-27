@@ -11,3 +11,29 @@
 <a routerLink="/admin">Админка</a><br>
 <a routerLink="/login">Логин</a><br>
 <a routerLink="/sign-up">Регистрация</a><br>
+
+<!--<div>
+    <p>Имя пользователя: {{user?.name}}</p>
+    <p>Возраст пользователя: {{user?.age}}</p>
+</div>
+
+<ul>
+    <li *ngFor="let user of users">
+    <p>Имя пользователя: {{user?.name}}</p>
+    <p>Возраст пользователя: {{user?.age}}</p>
+    </li>
+</ul>-->
+
+
+<ul>
+    <li *ngFor="let offer of offerItems">
+    <p>id: {{offer?.id}}</p>
+    <p>Заголовок: {{offer?.title}}</p>
+    <p>Регион id: {{offer?.regionID}}</p>
+    <p>Регион: {{offer?.region}}</p>
+    <p>Цена: {{offer?.price}}</p>
+    <p>Категория id: {{offer?.categoryID}}</p>
+    <p>Категория: {{offer?.category}}</p>
+    <p>Фото(главное): {{offer?.announcementFaceImageUri}}</p>
+    </li>
+</ul>

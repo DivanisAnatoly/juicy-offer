@@ -3,17 +3,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
 
 //primeng
 import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
+import {DividerModule} from 'primeng/divider';
 
 //компоненты
 import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 
-//страницы
+//ѝтраницы
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -25,21 +27,23 @@ import { AddOfferComponent } from './pages/add-offer/add-offer.component';
 import { EditOfferComponent } from './pages/edit-offer/edit-offer.component';
 
 
-//роутинг (для переключения между модулями приложения)
+//роутинг (длѝ переключениѝ между модулѝми приложениѝ)
 import { AppRoutingModule } from './app-routing.module';
 
-//модуль ядра приложения
+//модуль ѝдра приложениѝ
 import { CoreModule } from './core/core.module';
 import { AuthModule } from './modules/auth/auth.module';
 
-//сервисы
+//ѝервиѝы
 import { LoggerService } from './shared/services/logger.service';
+import { OffersModule } from './modules/offers/offers.module';
+import { OfferDescriptionComponent } from './pages/offer-description/offer-description.component';
 
 
 
-//метаданные приложения
+//метаданные приложениѝ
 @NgModule({
-  //предоставляет для внеш доступа
+  //предоѝтавлѝет длѝ внеш доѝтупа
   declarations: [
     AppComponent,
     FooterComponent,
@@ -52,9 +56,10 @@ import { LoggerService } from './shared/services/logger.service';
     AdminComponent,
     MyOffersComponent,
     AddOfferComponent,
-    EditOfferComponent
+    EditOfferComponent,
+    OfferDescriptionComponent
   ],
-  //зависимости
+  //завиѝимоѝти
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -63,7 +68,10 @@ import { LoggerService } from './shared/services/logger.service';
     ButtonModule,
     InputTextModule,
     CoreModule,
-    AuthModule
+    AuthModule,
+    HttpClientModule,
+    OffersModule,
+    DividerModule
   ],
   providers: [LoggerService],
   bootstrap: [AppComponent]

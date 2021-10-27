@@ -8,15 +8,18 @@ export class AdsService {
     parentAds: Ad[] = [
       {
         title: 'Автомобиль',
-        description: 'Самый быстрый'
+        description: 'Самый быстрый',
+        // image: 
       },
       {
         title: 'Катер',
-        description: 'Белый катер'
+        description: 'Белый катер',
+       // image: 
       },
       {
         title: 'Квартира',
-        description: 'В Москве'
+        description: 'В Москве',
+        //image: 
       }
     ];
   
@@ -30,4 +33,8 @@ export class AdsService {
       this.parentAds.push(newAd);  
     }
   }
+
+function https(https: any): File | undefined {
+  throw new Error("Function not implemented.");
+}
   

@@ -1,0 +1,25 @@
+{
+  "offersList":
+  [
+    {
+      "id": 1,
+      "title": "OOO gasprom",
+      "regionID": 1,
+      "region": "Moscow",
+      "price": null,
+      "categoryID": 1,
+      "category": "resorses",
+      "announcementFaceImageUri": null
+    },
+    {
+      "id": 2,
+      "title": "New Title",
+      "regionID": 1,
+      "region": "Moscow",
+      "price": 300,
+      "categoryID": 1,
+      "category": "resorses",
+      "announcementFaceImageUri": "https://mega.nz/file/xsYl3SqY#1VGj-EFEabtsBXrHbYiTKNh0aJBKHxKAzrRtc9GfAv0"
+    }
+  ]
+}

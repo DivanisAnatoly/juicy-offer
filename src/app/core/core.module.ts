@@ -22,7 +22,7 @@ import { LoginFormComponent } from './components/login/login-form/login-form.com
     LoginComponent,
     SignUpComponent,
     DynamicDialogComponent,
-    LoginFormComponent
+    LoginFormComponent,
   ],
   imports: [
     CommonModule,
@@ -33,7 +33,7 @@ import { LoginFormComponent } from './components/login/login-form/login-form.com
     DialogModule,
     TabViewModule,
     InputMaskModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   exports:[
     AddsListComponent

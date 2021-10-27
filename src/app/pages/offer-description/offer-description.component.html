@@ -1,0 +1,18 @@
+<div class="mx-2">
+    <p>offer-description works!</p>
+<p>id: {{offer?.id}}</p>
+<p>title: {{offer?.title}}</p>
+<p>description: {{offer?.description}}</p>
+<p>price: {{offer?.price}}</p>
+<p>regionID: {{offer?.regionID}}</p>
+<p>region: {{offer?.region}}</p>
+<p>categoryID: {{offer?.categoryID}}</p>
+<p>category: {{offer?.category}}</p>
+<p>ownerID: {{offer?.ownerID}}</p>
+<p>ownerName: {{offer?.ownerName}}</p>
+<ul>
+    <li *ngFor="let image of offer?.announcementImagesUri; let i = index">
+        <p>image {{i+1}}: {{image}}</p>
+    </li>
+</ul>
+</div>

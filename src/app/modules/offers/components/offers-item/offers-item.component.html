@@ -1,0 +1,9 @@
+<p>id: {{offersItem?.id}}</p>
+<p>Заголовок: {{offersItem?.title}}</p>
+<p>Регион id: {{offersItem?.regionID}}</p>
+<p>Регион: {{offersItem?.region}}</p>
+<p>Цена: {{offersItem?.price}}</p>
+<p>Категория id: {{offersItem?.categoryID}}</p>
+<p>Категория: {{offersItem?.category}}</p>
+<p>Фото(главное): {{offersItem?.announcementFaceImageUri}}</p>
+<a [routerLink]="['./', offersItem?.id]">Подробнее</a>

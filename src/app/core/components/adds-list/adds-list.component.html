@@ -1,17 +1,27 @@
 <ul>
     <li *ngFor="let item of childAds; let i = index">
         <span>
-            <strong>{{i+1}}</strong>
-            <span class="title">{{ item.title}}</span>
-            <span class="description">{{ item.description}}</span>
-            <p-button label="Delete" (click)="deleteAd(i)"></p-button>
+            <div>
+                <span class="image">{{ item.image}}</span>
+                <strong>{{i+1}}.</strong>
+                <span class="title" text-align=center>{{ item.title}}</span>
+            </div>
+            <div><span class="description">{{ item.description}}</span></div>
+            <div>
+                <p-button label="Delete" (click)="deleteAd(i)"></p-button>
+            </div>
         </span>
     </li>
 </ul>
 
-<form [formGroup]="superForm">
-    <input pInputText type="text" formControlName="title" placeholder="Введите название объявления"/>
-    <input pInputText type="text" formControlName="description" placeholder="Введите описание объявления"/>
-    
-    <p-button label="Add item" (click)="addAd()" [disabled]="superForm.invalid"></p-button>
+<form [formGroup]="superForm" class="formm">
+    <p-button label="Создать объявление" (click)="addAd()" [disabled]="superForm.invalid"></p-button>
+    <div><input pInputText type="text" formControlName="title" placeholder="Введите название объявления" />
+    </div>
+    <div>
+        <textarea id="float-input" rows="5" cols="30" pInputTextarea formControlName="description"
+            placeholder="Введите описание объявления" autoResize="autoResize"></textarea>
+        <p-fileUpload name="myfile[]" url="./upload.php" class="file" accept="image/*" formControlName="image">
+        </p-fileUpload>
+    </div>
 </form>
