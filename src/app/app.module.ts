@@ -9,6 +9,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
 import {DividerModule} from 'primeng/divider';
+// import {DropdownModule} from 'primeng/dropdown';
 
 //компоненты
 import { AppComponent } from './app.component';
@@ -71,7 +72,8 @@ import { OfferDescriptionComponent } from './pages/offer-description/offer-descr
     AuthModule,
     HttpClientModule,
     OffersModule,
-    DividerModule
+    DividerModule,
+    // DropdownModule
   ],
   providers: [LoggerService],
   bootstrap: [AppComponent]

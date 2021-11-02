@@ -1,4 +1,4 @@
-<h1>Страница с объявлениями (постраничный вывод)</h1>
+<!-- <h1>Страница с объявлениями (постраничный вывод)</h1>
 <pre>
     Страница содержит список объявлений.
     Планируется выводить список объявлений в формате страниц.
@@ -9,10 +9,12 @@
 <a routerLink="/admin">Админка</a><br>
 <a routerLink="/login">Логин</a><br>
 <a routerLink="/sign-up">Регистрация</a><br>
-<a routerLink="/my-offers">Мои объявления</a><br>
-
-<ul>
-    <li *ngFor="let offer of offerItems">
-        <app-offers-item [offersItem]="offer"></app-offers-item>
-    </li>
-</ul>
+<a routerLink="/my-offers">Мои объявления</a><br> --> 
+<!-- <ul>
+        <li *ngFor="let offer of offerItems">
+            <app-offers-item [offersItem]="offer"></app-offers-item>
+        </li>
+    </ul> -->
+<div *ngFor="let offer of offerItems">
+    <app-offers-item [offersItem]="offer"></app-offers-item>
+</div>

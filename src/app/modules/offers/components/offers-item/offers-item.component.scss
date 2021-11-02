@@ -1,17 +1,101 @@
+// input{
+//         padding:10px 20px 20px 20px;
+// }
+// li{
+//     list-style-type: none; /* Убираем маркеры */
+//     border-style: inset;
+//     border-color: orange;
+//     width:500px;
+//     margin: 0 auto;
+//     padding:20px 20px 20px 20px;
+// }
+// .formm{
+//     width:500px;
+//    margin: 0 auto;
+//    text-align: center;
+// }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+.offer {
+    max-width: 852px;
+    height: 250px;
+    background: #ffffff;
+    border: 2px solid #c4c4c4;
+    box-sizing: border-box;
+    box-shadow: -2px 2px 6px 4px rgba(0, 0, 0, 0.25);
+    margin: 36px auto;
+    display: flex;
+    padding: 24px 28px;
+    &__photo {
+        margin-right: 43px;
+        background-color: #F1AB4F;
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
 
-input{
-        padding:10px 20px 20px 20px;  
-}
-li{
-    list-style-type: none; /* Убираем маркеры */
-    border-style: inset;
-    border-color: orange;
-    width:500px;
-    margin: 0 auto;
-    padding:20px 20px 20px 20px;  
-}
-.formm{
-    width:500px;
-   margin: 0 auto;
-   text-align: center; 
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    &__top,
+    &__bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-family: "Noto Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 35px;
+        h2 {
+            margin: 0;
+        }
+    }
+
+    &__city {
+        font-family: "Noto Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        align-self: flex-end;
+        color: #000000;
+    }
+
+    &__text {
+        font-family: "Noto Serif";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #000000;
+    }
+
+    &__data {
+        font-family: "Noto Serif";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        height: 18px;
+        align-self: flex-end;
+    }
+
+    &__price {
+        font-family: "Noto Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 35px;
+        color: #000000;
+    }
 }

@@ -1,4 +1,4 @@
-<p>id: {{offersItem?.id}}</p>
+<!-- <p>id: {{offersItem?.id}}</p>
 <p>Заголовок: {{offersItem?.title}}</p>
 <p>Регион id: {{offersItem?.regionID}}</p>
 <p>Регион: {{offersItem?.region}}</p>
@@ -6,4 +6,31 @@
 <p>Категория id: {{offersItem?.categoryID}}</p>
 <p>Категория: {{offersItem?.category}}</p>
 <p>Фото(главное): {{offersItem?.announcementFaceImageUri}}</p>
-<a [routerLink]="['./', offersItem?.id]">Подробнее</a>
+<a [routerLink]="['./', offersItem?.id]">Подробнее</a> -->
+<div class="offer ">
+    <div class="offer__photo ">
+        <img src="{{offersItem?.announcementFaceImageUri}}" alt="">
+        
+    </div>
+    <div class="offer__info ">
+        <div class="offer__top">
+            <div class="offer__title">
+                <h2>{{offersItem?.title}}</h2>
+            </div>
+            <div class="offer__city">
+                {{offersItem?.region}}
+            </div>
+        </div>
+        <div class="offer__text">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laboriosam magni quo modi inventore dolore ducimus quaerat non exercitationem delectus, tempora ad iure optio cupiditate aut saepe voluptate. Corrupti, ipsa.
+            </p>
+        </div>
+        <div class="offer__bottom">
+            <div class="offer__data">
+                10.10.2021
+            </div>
+            <div class="offer__price">{{offersItem?.price}}</div>
+        </div>
+    </div>
+</div>
