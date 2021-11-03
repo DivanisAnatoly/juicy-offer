@@ -32,13 +32,9 @@
             ],
             "styles": [
               "src/styles.scss",
-              "./node_modules/primeflex/src/_variables.scss",
-              "./node_modules/primeflex/src/_formlayout.scss",
-              "./node_modules/primeflex/src/_display.scss",
-              "./node_modules/primeflex/src/_text.scss",
-              "./node_modules/primeflex/src/flexbox/_flexbox.scss",
-              "./node_modules/primeflex/src/_spacing.scss",
-              "./node_modules/primeflex/src/_elevation.scss"
+              "./node_modules/primeflex/primeflex.css",
+              "node_modules/primeicons/primeicons.css",
+              "primeng/resources/themes/saga-orange/theme.css"
             ],
             "scripts": []
           },
