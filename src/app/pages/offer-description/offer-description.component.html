@@ -1,4 +1,4 @@
-<div class="mx-2">
+<!-- <div class="mx-2">
     <p>offer-description works!</p>
 <p>id: {{offer?.id}}</p>
 <p>title: {{offer?.title}}</p>
@@ -15,4 +15,91 @@
         <p>image {{i+1}}: {{image}}</p>
     </li>
 </ul>
+</div> -->
+<div class="wrapper">
+    <div class="container">
+        <div class="offer-top">
+            <div class="offer-top__photo ">
+                <img src="" alt="">
+
+            </div>
+            <div class="offer-top__info ">
+                <div class="offer-top__top">
+                    <div class="offer-top__title title">
+                        <h2>{{offer?.title}}</h2>
+                    </div>
+                    <div class="offer__city">
+                        <span>{{offer?.region}}</span>
+                    </div>
+                </div>
+                <div class="offer-top__text text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laboriosam magni quo modi
+                        inventore dolore ducimus quaerat non exercitationem delectus, tempora ad iure optio cupiditate
+                        aut saepe voluptate. Corrupti, ipsa.
+                    </p>
+                </div>
+                <div class="offer-top__bottom">
+                    <div class="offer-top__price">{{offer?.price}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gallary">
+        <div class="container">
+            <p-carousel  [numVisible]="3" [numScroll]="1">
+                <ng-template pTemplate="item">
+                   
+                </ng-template>
+            </p-carousel>
+        </div>
+    </div>
+    <div class="description">
+        <div class="container">
+
+            <div class="description__title title">
+                <h2>Описание</h2>
+            </div>
+            <div class="description__text text">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, aspernatur. Inventore nobis
+                    repellendus a. Cumque facere quia impedit exercitationem, sint a maiores tempore doloribus quibusdam
+                    ut sapiente veniam itaque laboriosam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione odio repudiandae, corporis
+                    quaerat optio quasi voluptatum itaque obcaecati corrupti expedita at facilis laboriosam pariatur
+                    ullam quae explicabo dolorem eligendi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, iure rerum. Reprehenderit, obcaecati.
+                    Fuga eos, totam minus, eaque excepturi veniam quis commodi, blanditiis enim dolorum modi sunt et
+                    voluptatem rem.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="contacts">
+        <div class="container">
+            <div class="contacts__block">
+
+                <div class="contacts__title title">
+                    <h2>Контакты</h2>
+                </div>
+                <div class="contacts__data">
+                    <div class="contacts__telephone">
+                        <i class="pi pi-phone"></i>
+                        <span>89788888888</span>
+                    </div>
+                    <div class="contacts__mail">
+                        <i class="pi pi-envelope"></i>
+                        <span>kokoko@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comments">
+        <div class="container">
+            <div class="comments__title title"></div>
+        </div>
+    </div>
+
 </div>

@@ -9,6 +9,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
 import {DividerModule} from 'primeng/divider';
+import {CarouselModule} from 'primeng/carousel';
 
 //компоненты
 import { AppComponent } from './app.component';
@@ -38,6 +39,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { LoggerService } from './shared/services/logger.service';
 import { OffersModule } from './modules/offers/offers.module';
 import { OfferDescriptionComponent } from './pages/offer-description/offer-description.component';
+import { FiltersComponent } from './shared/components/filters/filters.component';
 
 
 
@@ -57,7 +59,8 @@ import { OfferDescriptionComponent } from './pages/offer-description/offer-descr
     MyOffersComponent,
     AddOfferComponent,
     EditOfferComponent,
-    OfferDescriptionComponent
+    OfferDescriptionComponent,
+    FiltersComponent
   ],
   //завиѝимоѝти
   imports: [
@@ -71,7 +74,8 @@ import { OfferDescriptionComponent } from './pages/offer-description/offer-descr
     AuthModule,
     HttpClientModule,
     OffersModule,
-    DividerModule
+    DividerModule,
+    CarouselModule
   ],
   providers: [LoggerService],
   bootstrap: [AppComponent]
